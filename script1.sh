@@ -1,11 +1,12 @@
 ############### To be Changed if required ######################
 
-echo "export http_proxy="10.10.78.61:3128"
-export https_proxy="10.10.78.61:3128"" >> ~/.bashrc
+echo 'export http_proxy="10.10.78.61:3128"
+export https_proxy="10.10.78.61:3128"' >> ~/.bashrc
+
 ################################################################
 
 
-####### Don't touch the code below until you are smart enough, boy!! ############################
+####### Don't touch the code below smarty pants!! ############################
 
 
 ########few more aliases #########
@@ -22,7 +23,7 @@ echo -e "\n" >> ~/.bashrc
 
 ######### Installing and activating miniconda ############################################
 source ~/.bashrc
-wget https://repo.anaconda.com/miniconda/Miniconda3-py39_4.9.2-Linux-x86_64.sh -O miniconda.sh \
+wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh \
 && chmod +x miniconda.sh && bash miniconda.sh -b -p miniconda
 
 base_dir=$(echo $PWD)
