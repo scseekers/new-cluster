@@ -4,7 +4,7 @@ As a new user to Dr Ishaan's lab cluster, you must find it arduous to do install
 
 ## Clone and Run
 
-```
+```bash
 git clone https://github.com/scseekers/new-cluster.git
 
 cd new-cluster && chmod +x script*
