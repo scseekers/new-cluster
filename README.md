@@ -53,5 +53,3 @@ You can now rest as the basic genomics packages get installed. These packages wi
 
 BAM!! You are now set with the installations. Happy Computing!!
 
-
-```
