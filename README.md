@@ -28,6 +28,30 @@ Making R as a separate environment is a good practice when working with conda. O
 For genomics, we have written an R script but there are several necessary steps you must do before running that.
 
 ```bash
+## Installing mamba and creating R environment
 ./script2.sh
+
+## Activate R environment
+```
+View list of environment using `conda env list` or `conda info --envs`
+
+```bash
+#Activating R environment
+conda activate R
+
+# Open R and install BiocManager and select a mirror to install the packages from. Use the following 
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+```
+Once BiocManager has been installed run `pkg.R` script as follows
+
+```
+nohup Rscript pkg.R &
+```
+You can now rest as the basic genomics packages get installed. These packages will install all necessary dependencies. However, this isn't a complete list. Feel free to add more packages hall you require.
+
+BAM!! You are now set with the installations. Happy Computing!!
+
 
 ```
