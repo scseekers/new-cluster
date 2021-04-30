@@ -1,5 +1,8 @@
 if (!requireNamespace("BiocManager", quietly = TRUE))
     install.packages("BiocManager")
+install.packages("httr")
+install.packages("gert")
+install.packages("plotly")
 BiocManager::install(c('qvalue','plot3D','ggplot2','pheatmap','cowplot',
                       'cluster', 'NbClust', 'fastICA', 'NMF','matrixStats',
                       'Rtsne', 'mosaic', 'knitr', 'genomation',
