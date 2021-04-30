@@ -38,6 +38,7 @@ View list of environment using `conda env list` or `conda info --envs`
 ```bash
 #Activating R environment
 conda activate R
+mamba install -c conda-forge r-essentials
 
 # Open R and install BiocManager and select a mirror to install the packages from. Use the following 
 
