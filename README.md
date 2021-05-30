@@ -20,7 +20,13 @@ cd new-cluster && chmod +x script*
 ```
 Logout and login now for miniconda to get active.
 
+NOTE: In case if you are using the research proxy you need to add the following into your .bashrc file using `vim ~/.bashrc`.
 
+```bash
+export https_proxy="http://xen03.iitd.ac.in:3128"
+export http_proxy="http://xen03.iitd.ac.in:3128"
+export ftp_proxy="http://xen03.iitd.ac.in:3128"
+```
 ### Installing R in Miniconda as a separate environment
 
 Making R as a separate environment is a good practice when working with conda. One should never do installation of other packages (other than R packages) in R environment until you know what you are doing.
